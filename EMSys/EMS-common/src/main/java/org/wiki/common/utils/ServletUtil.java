@@ -1,5 +1,11 @@
 package org.wiki.common.utils;
 
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @Packagename: org.wiki.common.utils
  * @Classname: ServletUtil
@@ -9,7 +15,18 @@ package org.wiki.common.utils;
  */
 public class ServletUtil {
 
-
+    public static String getParams(String name){
+        return getRequest().getParameter(name);
+    }
+    
+    public static HttpServletRequest getRequest() {
+        return getRequestAttributes().getRequest();
+    }
+    
+    public static ServletRequestAttributes getRequestAttributes() {
+        RequestAttributes attributes = RequestContextHolder.getRequestAttributes();
+        return (ServletRequestAttributes) attributes;
+    }
 
 
 
