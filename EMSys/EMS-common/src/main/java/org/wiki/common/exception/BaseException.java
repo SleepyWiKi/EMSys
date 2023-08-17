@@ -8,4 +8,8 @@ package org.wiki.common.exception;
  * @Date: 23/06/19 7:35 PM
  */
 public class BaseException extends RuntimeException{
+
+
+
+
 }

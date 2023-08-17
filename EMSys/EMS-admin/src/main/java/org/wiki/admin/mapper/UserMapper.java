@@ -1,5 +1,6 @@
 package org.wiki.admin.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.wiki.admin.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-08-14 11:24:42
 * @Entity org.wiki.admin.model.entity.User
 */
+@Mapper
 public interface UserMapper extends BaseMapper<User> {
 
 }

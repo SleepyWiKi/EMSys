@@ -1,10 +1,18 @@
 package org.wiki.common.anotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
+import org.wiki.common.constant.AnnotationLogConstant;
+
+import java.lang.annotation.*;
 
 @Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface Log {
+    
+    /**
+     * 日志类型 1-登录日志  2-操作日志(默认)
+     **/
+    public String logType() default AnnotationLogConstant.LOG_TYPE_OPERATE;
     
     /**
      * 模块名称

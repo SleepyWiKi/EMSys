@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>org.wiki</groupId>
-    <artifactId>EMS-activiti</artifactId>
+    <artifactId>EMS-activity</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>EMS-activiti</name>
+    <name>EMS-activity</name>
     <description>工作流模块</description>
 
     <dependencies>

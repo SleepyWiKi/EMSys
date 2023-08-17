@@ -1,20 +1,20 @@
-package org.wiki.admin;
+package org.wiki.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @Packagename: org.wiki.admin
- * @Classname: EMSysApplication
- * @Description: EMSysApplication
+ * @Packagename: org.wiki.service
+ * @Classname: EMSysApp
+ * @Description: 程序主入口
  * @Author: WiKi
- * @Date: 23/06/19 6:46 PM
+ * @Date: 23/08/17 2:22 PM
  */
 @SpringBootApplication
-public class EMSysApplication {
+public class EMSysApp {
     
     public static void main(String[] args) {
-        SpringApplication.run(EMSysApplication.class, args);
+        SpringApplication.run(EMSysApp.class, args);
         System.out.println("EMSys启动成功！");
     }
     

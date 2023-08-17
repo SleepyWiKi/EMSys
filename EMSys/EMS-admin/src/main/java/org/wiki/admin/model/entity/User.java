@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -12,6 +14,7 @@ import lombok.Data;
  */
 @TableName(value ="user")
 @Data
+@Builder
 public class User implements Serializable {
     /**
      * 主键id

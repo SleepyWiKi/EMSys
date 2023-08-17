@@ -9,19 +9,19 @@ EMSys:
   # 实例演示开关
   demoEnabled: true
   # 文件路径
-  profile: C:/ruoyi/uploadPath
+  profile: F:/EM/uploadPath
   # 获取ip地址开关
   addressEnabled: true
 
 #开发环境配置
 server:
-  port: 8080
+  port: 9704
   servlet:
     context-path: /
   tomcat:
     uri-encoding: UTF-8
     threads:
-      max: 500
+      max: 200
       min-spare: 30
 
 #日志配置
