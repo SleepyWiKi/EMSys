@@ -1,4 +1,4 @@
-package org.wiki.admin.model.entity;
+package org.wiki.service.module.personnel.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 

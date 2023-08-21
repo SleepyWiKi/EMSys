@@ -1,4 +1,4 @@
-package org.wiki.admin.model.vo;
+package org.wiki.service.module.personnel.model.vo;
 
 import lombok.Data;
 
@@ -6,48 +6,33 @@ import java.util.Date;
 
 /**
  * @Packagename: org.wiki.admin.model.vo
- * @Classname: UserVo
- * @Description: 用户vo
  * @Author: WiKi
  * @Date: 23/08/14 11:43 AM
  */
 @Data
-public class UserVo {
+public class RoleVo {
+    
+    private String id;
     
     /**
-     * 用户名
+     * 父级角色ID
      */
-    private String userName;
+    private String pid;
     
     /**
-     * 账户名
+     * 角色名称
      */
-    private String account;
+    private String roleName;
     
     /**
-     * 密码
+     * 权限ID
      */
-    private String password;
+    private String permissionId;
     
     /**
-     * 联系电话
+     * 权限名称
      */
-    private String phone;
-    
-    /**
-     * 所属部门id
-     */
-    private String departId;
-    
-    /**
-     * 所属项目id
-     */
-    private String projectId;
-    
-    /**
-     * 用户状态（0-停用,1-启用）
-     */
-    private String status;
+    private String permissionName;
     
     /**
      * 备注

@@ -1,21 +1,20 @@
-package org.wiki.admin.controller;
+package org.wiki.service.module.personnel.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.web.bind.annotation.*;
-import org.wiki.admin.model.dto.user.UserAddRequestDto;
-import org.wiki.admin.model.dto.user.UserQueryRequestDto;
-import org.wiki.admin.model.dto.user.UserUpdateRequestDto;
-import org.wiki.admin.model.entity.User;
-import org.wiki.admin.model.vo.UserVo;
-import org.wiki.admin.service.UserService;
 import org.wiki.common.anotation.Log;
 import org.wiki.common.constant.AnnotationLogConstant;
 import org.wiki.common.core.domain.AjaxResult;
+import org.wiki.service.module.personnel.model.dto.user.UserAddRequestDto;
+import org.wiki.service.module.personnel.model.dto.user.UserQueryRequestDto;
+import org.wiki.service.module.personnel.model.dto.user.UserUpdateRequestDto;
+import org.wiki.service.module.personnel.model.entity.User;
+import org.wiki.service.module.personnel.model.vo.UserVo;
+import org.wiki.service.module.personnel.service.UserService;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * @Packagename: org.wiki.admin.controller

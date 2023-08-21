@@ -1,4 +1,4 @@
-package org.wiki.admin.service.impl;
+package org.wiki.service.module.personnel.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
@@ -7,12 +7,12 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import org.wiki.admin.model.dto.user.UserQueryRequestDto;
-import org.wiki.admin.model.entity.User;
-import org.wiki.admin.model.vo.UserVo;
-import org.wiki.admin.service.UserService;
-import org.wiki.admin.mapper.UserMapper;
 import org.springframework.stereotype.Service;
+import org.wiki.service.module.personnel.mapper.UserMapper;
+import org.wiki.service.module.personnel.model.dto.user.UserQueryRequestDto;
+import org.wiki.service.module.personnel.model.entity.User;
+import org.wiki.service.module.personnel.model.vo.UserVo;
+import org.wiki.service.module.personnel.service.UserService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -25,7 +25,7 @@ import java.util.List;
 @Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
-    implements UserService{
+    implements UserService {
     
     @Resource
     private UserMapper userMapper;

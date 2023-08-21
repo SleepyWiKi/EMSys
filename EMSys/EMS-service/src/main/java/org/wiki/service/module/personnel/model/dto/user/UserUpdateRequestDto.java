@@ -1,16 +1,21 @@
-package org.wiki.admin.model.dto.user;
+package org.wiki.service.module.personnel.model.dto.user;
 
 import lombok.Data;
 
 /**
  * @Packagename: org.wiki.admin.model.dto
- * @Classname: UserAddRequestDto
- * @Description: 新增用户请求dto
+ * @Classname: UserUpdateRequestDto
+ * @Description: 更新用户请求dto
  * @Author: WiKi
  * @Date: 23/08/14 11:42 AM
  */
 @Data
-public class UserAddRequestDto {
+public class UserUpdateRequestDto {
+    
+    /**
+     * 用户id
+     */
+    private String id;
     
     /**
      * 用户名

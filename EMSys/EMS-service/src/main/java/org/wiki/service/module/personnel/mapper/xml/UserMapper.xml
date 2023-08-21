@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.wiki.admin.mapper.UserMapper">
+<mapper namespace="org.wiki.service.module.personnel.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="org.wiki.admin.model.entity.User">
+    <resultMap id="BaseResultMap" type="org.wiki.service.module.personnel.model.entity.User">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="userName" column="user_name" jdbcType="VARCHAR"/>
             <result property="account" column="account" jdbcType="VARCHAR"/>

@@ -1,10 +1,10 @@
-package org.wiki.admin.service;
+package org.wiki.service.module.personnel.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.wiki.admin.model.dto.user.UserQueryRequestDto;
-import org.wiki.admin.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.wiki.admin.model.vo.UserVo;
+import org.wiki.service.module.personnel.model.dto.user.UserQueryRequestDto;
+import org.wiki.service.module.personnel.model.entity.User;
+import org.wiki.service.module.personnel.model.vo.UserVo;
 
 import java.util.List;
 

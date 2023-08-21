@@ -1,8 +1,8 @@
-package org.wiki.admin.mapper;
+package org.wiki.service.module.personnel.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.wiki.admin.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.wiki.service.module.personnel.model.entity.User;
 
 /**
 * @author WiKi

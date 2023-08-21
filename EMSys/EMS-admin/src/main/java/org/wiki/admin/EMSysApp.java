@@ -1,14 +1,14 @@
-package org.wiki.service;
+package org.wiki.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @Packagename: org.wiki.service
- * @Classname: EMSysApp
- * @Description: 程序主入口
+ * @Packagename: org.wiki.admin
+ * @Classname: EMSApp
+ * @Description: 服务主入口
  * @Author: WiKi
- * @Date: 23/08/17 2:22 PM
+ * @Date: 23/08/21 3:41 PM
  */
 @SpringBootApplication
 public class EMSysApp {

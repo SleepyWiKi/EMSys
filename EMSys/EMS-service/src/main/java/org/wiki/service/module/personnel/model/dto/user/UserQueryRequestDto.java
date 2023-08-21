@@ -1,4 +1,4 @@
-package org.wiki.admin.model.dto.user;
+package org.wiki.service.module.personnel.model.dto.user;
 
 import lombok.Data;
 

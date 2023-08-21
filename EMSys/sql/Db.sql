@@ -37,3 +37,47 @@ insert into `user` (`user_name`, `account`, `password`, `phone`, `status`) value
 insert into `user` (`user_name`, `account`, `password`, `phone`, `status`) values ('魏懿轩', '107', 'e7C', '15132361774', '6');
 insert into `user` (`user_name`, `account`, `password`, `phone`, `status`) values ('金烨伟', '76', 't8yH2', '17053645141', '6');
 insert into `user` (`user_name`, `account`, `password`, `phone`, `status`) values ('钟潇然', '5197510', 'J3Pw', '17772212243', '6');
+
+
+-- 角色表
+create table if not exists emsys.`role`
+(
+    `id` bigint not null auto_increment comment '主键id' primary key,
+    `pid` varchar(256) not null comment '父级角色ID',
+    `role_name` varchar(256) not null comment '角色名称',
+#     `depart_id` varchar(256) null comment '所属部门id',
+#     `depart_name` varchar(256) null comment '所属部门名称',
+    `permission_id` varchar(256) not null comment '权限ID',
+    `permission_name` varchar(256) not null comment '权限名称',
+    `remark` varchar(256) null comment '备注',
+    `update_time` datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    `create_time` datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    `is_deleted` tinyint default 0 not null comment '是否删除(0-未删, 1-已删)'
+) comment '角色表';
+
+-- 权限信息表
+create table if not exists emsys.`permission`
+(
+    `id` bigint not null auto_increment comment '主键' primary key,
+    `pid` varchar(256) null comment '父级权限ID',
+    `permission_code` varchar(256) not null comment '权限代码',
+    `permission_name` varchar(256) not null comment '权限名称',
+    `remark` varchar(256) null comment '权限备注',
+    `update_time` datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    `create_time` datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    `is_deleted` tinyint default 0 not null comment '是否删除(0-未删, 1-已删)'
+) comment '权限信息表';
+
+
+-- 用户角色表
+create table if not exists emsys.`user_role`
+(
+    `id` bigint not null auto_increment comment '主键' primary key,
+    `user_id` bigint not null comment '用户ID',
+    `user_name` varchar(256) not null comment '用户名称',
+    `role_id` bigint not null comment '角色ID',
+    `role_name` varchar(256) not null comment '角色名称',
+    `update_time` datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    `create_time` datetime default CURRENT_TIMESTAMP not null comment '创建时间',
+    `is_deleted` tinyint default 0 not null comment '是否删除(0-未删, 1-已删)'
+) comment '用户角色表';
